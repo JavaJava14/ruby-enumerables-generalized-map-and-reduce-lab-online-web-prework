@@ -19,7 +19,7 @@ else
   origin = starting_point[0]
   i = 1
 end
-while i < s.length
+while i < starting_point.length
   origin = yield(origin, starting_point[i])
   i += 1
 end
