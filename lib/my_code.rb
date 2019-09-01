@@ -18,4 +18,5 @@ def reduce(source_array,starting_point = 0)
     origin = yield(origin,source_array[i])
     i += 1
   end
+  origin
 end
