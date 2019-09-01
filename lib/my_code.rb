@@ -12,11 +12,16 @@ def map(source_array)
 end
 
 def reduce(source_array,starting_point = nil)
+  if starting_point
   origin = starting_point
   i = 0
-  while i < source_array.length do
-    origin = yield(origin,source_array[i])
-    i += 1
-  end
-  origin
+else
+  origin = starting_point[0]
+  i = 1
+end
+while i < s.length
+  origin = yield(origin, starting_point[i])
+  i += 1
+end
+origin
 end
